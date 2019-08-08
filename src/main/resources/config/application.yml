@@ -1,0 +1,31 @@
+app:
+  
+spring:
+  application:
+    name=Multi Api Proxy
+  mvc:
+    favicon:
+      enabled: false
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:localhost;DB_CLOSE_ON_EXIT=FALSE
+    username: dummy
+    password:
+logging:
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%36.36X{requestId:- no request context}]){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx"
+  level:
+    com.github.rsrini7: ${LOG_LEVEL:debug}
+elide:
+  prefix: "/api"
+  default-page-size: 20
+  max-page-size: 100
+  spring-dependency-injection: true
+  return-error-objects: false
+  mvc:
+    enable: true
+    get: true
+    post: true
+    patch: false
+    delete: false
+    graphql: true

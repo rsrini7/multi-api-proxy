@@ -1,0 +1,15 @@
+type Test{
+
+    id : ID!
+
+    name: String
+
+}
+
+type Query {
+    Test(name: String): Test
+}
+
+schema {
+    query: Query
+}

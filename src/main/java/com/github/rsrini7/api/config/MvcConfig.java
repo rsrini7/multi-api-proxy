@@ -14,6 +14,8 @@ public class MvcConfig implements WebMvcConfigurer {
     registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
     registry.addResourceHandler("/favicon.ico").addResourceLocations("/");
     registry.addResourceHandler("/robots.txt").addResourceLocations("/");
+    registry.addResourceHandler("/graphql-ui.html").addResourceLocations("/");
+    registry.addResourceHandler("/index.html").addResourceLocations("/");
   }
 
   @Override

@@ -21,7 +21,7 @@ public class ElideSwaggerResourceProvider extends InMemorySwaggerResourcesProvid
     final List<SwaggerResource> swaggerResources = super.get();
 
     SwaggerResource swaggerResource = new SwaggerResource();
-    swaggerResource.setName("data");
+    swaggerResource.setName("json-api");
     swaggerResource.setLocation("/elide/docs");
     swaggerResource.setSwaggerVersion("2.0");
     swaggerResources.add(swaggerResource);

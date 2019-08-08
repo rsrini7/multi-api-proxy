@@ -19,7 +19,7 @@ import static springfox.documentation.builders.PathSelectors.regex;
 
 @Configuration
 @EnableSwagger2
-@Api(value = "Data API", tags = {"foo", "bar"})
+@Api(value = "Data API", tags = {"multi api", "proxy","Json-API"})
 public class SwaggerConfig {
 
   private final AppProperties appProperties;
@@ -50,7 +50,7 @@ public class SwaggerConfig {
 
   private Predicate<String> paths() {
     return or(
-      regex("/data/.*"),
+      regex("/json-api/.*"),
       regex("/version"));
   }
 }

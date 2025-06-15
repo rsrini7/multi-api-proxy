@@ -17,7 +17,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <elide.version>4.5.0</elide.version>
+        <elide.version>4.5.15</elide.version>
     </properties>
 
     <dependencies>
